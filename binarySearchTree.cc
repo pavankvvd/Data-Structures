@@ -1,7 +1,5 @@
 #include "headers.h"
 
-using namespace std;
-
 int number = 0;
 
 struct node
