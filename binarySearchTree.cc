@@ -70,9 +70,6 @@ int main()
     createNode(4);
     createNode(3);
     createNode(8);
-    createNode(7);
-    createNode(1);
-    createNode(5);
     cout << "printing inorder " << endl;
     displayInorder(root);
 
