@@ -12,7 +12,7 @@ public:
     Stack();
     void push(int);
     void display();
-    void del();
+    void pop();
 };
 
 Stack::Stack()
@@ -47,7 +47,7 @@ Stack::display()
 }
 
 void
-Stack::del()
+Stack::pop()
 {
     if (top == 0) {
         cout << "stack is empty" << endl;
@@ -64,9 +64,9 @@ int main()
     s.push(2);
     s.push(1);
     s.display();
-    s.del();
+    s.pop();
     s.display();
-    s.del();
+    s.pop();
     s.display();
     return 0;
 }
