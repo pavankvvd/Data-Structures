@@ -6,8 +6,9 @@ private:
 public:
     Stack();
     ~Stack();
+    bool isEmpty();
+    bool isFull();
     void push(T);
     void display();
-    bool isEmpty();
     T pop();
 };

@@ -18,7 +18,7 @@ Stack<T, maxSize>::~Stack()
 template<class T, int maxSize>
 void Stack<T, maxSize>::push(T x)
 {
-    if (top >= maxSize) {
+    if (isFull()) {
         cout << "stack overflow" << endl;
         return;
     }
@@ -51,6 +51,15 @@ template<class T, int maxSize>
 bool Stack<T, maxSize>::isEmpty()
 {
     if (top == 0) {
+        return true;
+    }
+    return false;
+}
+
+template<class T, int maxSize>
+bool Stack<T, maxSize>::isFull()
+{
+    if (top >= maxSize) {
         return true;
     }
     return false;
