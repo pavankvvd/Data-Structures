@@ -1,3 +1,5 @@
+// this is just a function and wont compile
+
 #include <iostream>
 #include <string>
 #include <vector>
